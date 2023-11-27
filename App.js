@@ -67,7 +67,6 @@ import ReactDOM from 'react-dom/client';
 const Title=()=>{
   return <h1 className='head'> Hello from the title component</h1>
 }
-
 const data=1000;
 
 //Component composition
