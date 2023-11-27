@@ -49,4 +49,40 @@ const parent = React.createElement("div", { id: "Parent" }, [
   ]);
   const root=ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);   
+root.render(parent);  
+
+//Jsx(transpiled before it reaches the js engine)->pracel-babel
+// Jsx=>React.createElement=>ReactElement=>JS OBJECT=>HTML ELEMENT(RENDER)
+
+//JSX or React Element
+// const Jsxparent=
+// (<h1 id='head'>
+//   Hello React from the JSX</h1>)
+//   const root=ReactDOM.createRoot(document.getElementById("root"));
+
+// root.render(Jsxparent);   
+
+
+
+//React  Functional Components
+
+const Title=()=>{
+  return <h1 className='head'> Hello from the title component</h1>
+}
+const data=1000;
+//Component composition
+const Headingcomponent=()=>{
+  return <div id='container'>
+    <Title/>
+    <Title></Title>
+    {Title()} 
+    {console.log('Kalyan Reddy')}
+    <h2>{data}</h2>
+    <h1 className='Heading'> Hello from the functional componets</h1>;
+  </div> 
+};
+const root=ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Headingcomponent/>); 
+
+
+
