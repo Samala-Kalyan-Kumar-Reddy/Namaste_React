@@ -1,5 +1,44 @@
 
-.Heading {
-    color: green;
-  }
+*{
+  box-sizing: border-box ;
+}
+
+body{
+  margin: 0;
+}
+.navbar{
+  background-color: blueviolet;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap:2rem;
+  padding:0 1rem;
+  height: 50px;
+}
+.navbar ul{
+  padding: 1rem;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+
+}
+.navbar a{
+  color: inherit;
+  text-decoration: none;
+}
+.sitename{
+  font-size: 2rem;
+}
+
+/* .navbar li.active{
+  background-color:yellow;
+} */
+
+.navbar li:hover{
+  background-color: black;
+}
+
   
